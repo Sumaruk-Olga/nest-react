@@ -1,0 +1,16 @@
+{
+    "$schema": "http://turborepo.org/shema.json",
+    "pipeline":{
+        "dev":{
+            "cache":false
+        },
+        "build":{
+            "dependsOn":[
+                "^build"
+            ],
+            "outputs":[
+                "dist/**"
+            ]
+        }
+    }
+}
